@@ -15,7 +15,7 @@
     <h1 class="logo"><span class="highlight">S</span>haron</h1>
 
     <nav>
-        <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="menu-toggle" id="menu-toggle">
             <i class="fas fa-bars"></i>
         </div>
 
@@ -28,39 +28,50 @@
     </nav>
 </header>
 
-<section id="projects">
-    <h2>My Projects</h2>
+<!-- PROJECT SECTION -->
+<section id="projects" class="projects">
+
+    <h2 class="section-title">My Projects</h2>
 
     <div class="projects-container">
 
         <div class="project-card">
-            <img src="calculator-project.png" alt="Calculator Preview">
-            <h3>Calculator App</h3>
-            <p>
-                A responsive calculator built with HTML, CSS and JavaScript.
-                Features include arithmetic operations, theme toggle, keyboard input, and interactive UI.
-            </p>
-            <a href="https://astounding-fudge-d184f5.netlify.app/" target="_blank">View Project</a>
+            <img src="calculator-project.png" alt="Calculator Project">
+
+            <div class="project-info">
+                <h3>Calculator App</h3>
+                <p>
+                    A responsive calculator built with HTML, CSS and JavaScript.
+                    It supports arithmetic operations, keyboard input and clean UI.
+                </p>
+
+                <a href="https://astounding-fudge-d184f5.netlify.app/" target="_blank">
+                    View Project
+                </a>
+            </div>
         </div>
 
         <div class="project-card">
-            <img src="todo-preview.png" alt="To-do App Preview">
-            <h3>To-Do App</h3>
-            <p>
-                A task manager built with HTML, CSS and JavaScript.
-                Includes add, edit, delete, completion tracking, and local storage.
-            </p>
-            <a href="https://iridescent-dasik-d2fb6a.netlify.app/" target="_blank">View Project</a>
+            <img src="todo-preview.png" alt="To-do App Project">
+
+            <div class="project-info">
+                <h3>To-Do App</h3>
+                <p>
+                    A task manager built with HTML, CSS and JavaScript.
+                    Includes add, delete, edit and local storage support.
+                </p>
+
+                <a href="https://iridescent-dasik-d2fb6a.netlify.app/" target="_blank">
+                    View Project
+                </a>
+            </div>
         </div>
 
     </div>
+
 </section>
 
-<script>
-function toggleMenu() {
-    document.querySelector(".nav-links").classList.toggle("active");
-}
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
